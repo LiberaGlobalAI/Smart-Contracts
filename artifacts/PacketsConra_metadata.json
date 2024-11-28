@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LiberaContract.sol": "PacketsConra"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/access/Ownable.sol": {
+			"keccak256": "0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6",
+				"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a"
+			]
+		},
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12",
+				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
+			]
+		},
+		"contracts/LiberaContract.sol": {
+			"keccak256": "0x36dc2a88fb62ef6b8d8b18badc7c2182a5d24a6dfe3b5229b3a0afd1fb754399",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://460e5bae083dbab81004dabe48cfcedf25b88cece93bddbf81b31de65085c4b3",
+				"dweb:/ipfs/QmVpFuYaAxg2rhfmAb6JAanDm7fS4nA1iouCc2t7badAZZ"
+			]
+		},
+		"contracts/LiberaToken1.sol": {
+			"keccak256": "0x7a11db7b6651d756ed1be22c2a49fc245a0f70a6920cca4ed657d7d80e55ac0b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c0d64a848bd8359509162485958a3b38fe41a2515a0d2f957eceabfc39c3a68c",
+				"dweb:/ipfs/QmYzXHcsiVwGPLiMgJigemjCTLv5j3XbnYT4EW9G6TYSHD"
+			]
+		}
+	},
+	"version": 1
+}

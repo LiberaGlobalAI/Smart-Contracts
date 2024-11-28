@@ -1,0 +1,305 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"distributeReward(uint256)": "940a4e45",
+			"getPacketByDataHash(string)": "aa1fb967",
+			"setPacket(address,string,string,string)": "5fc43fe8",
+			"setReward(uint256,uint256)": "a47bd496",
+			"validatePacket(uint256,bool)": "a8d7cc23"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [],
+			"name": "onlyRewardPoolError",
+			"type": "error"
+		},
+		{
+			"inputs": [],
+			"name": "packetDoesExistError",
+			"type": "error"
+		},
+		{
+			"inputs": [],
+			"name": "packetDoesNotExistError",
+			"type": "error"
+		},
+		{
+			"inputs": [],
+			"name": "packetIsNotValidError",
+			"type": "error"
+		},
+		{
+			"inputs": [],
+			"name": "rewardShouldNotBeZeroError",
+			"type": "error"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "uint256",
+					"name": "_id",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"internalType": "uint256",
+					"name": "_reward",
+					"type": "uint256"
+				}
+			],
+			"name": "distributeRewardEvent",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"internalType": "address",
+					"name": "_owner",
+					"type": "address"
+				},
+				{
+					"indexed": true,
+					"internalType": "string",
+					"name": "_dataHash",
+					"type": "string"
+				}
+			],
+			"name": "setPacketEvent",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "uint256",
+					"name": "_id",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"internalType": "uint256",
+					"name": "_reward",
+					"type": "uint256"
+				}
+			],
+			"name": "setRewardEvent",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "uint256",
+					"name": "_id",
+					"type": "uint256"
+				},
+				{
+					"indexed": false,
+					"internalType": "bool",
+					"name": "_isValid",
+					"type": "bool"
+				}
+			],
+			"name": "validatePacketEvent",
+			"type": "event"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_id",
+					"type": "uint256"
+				}
+			],
+			"name": "distributeReward",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "string",
+					"name": "_dataHash",
+					"type": "string"
+				}
+			],
+			"name": "getPacketByDataHash",
+			"outputs": [
+				{
+					"components": [
+						{
+							"internalType": "uint256",
+							"name": "id",
+							"type": "uint256"
+						},
+						{
+							"internalType": "address",
+							"name": "owner",
+							"type": "address"
+						},
+						{
+							"internalType": "string",
+							"name": "name",
+							"type": "string"
+						},
+						{
+							"internalType": "string",
+							"name": "dataHash",
+							"type": "string"
+						},
+						{
+							"internalType": "string",
+							"name": "dataType",
+							"type": "string"
+						},
+						{
+							"internalType": "uint256",
+							"name": "timestamp",
+							"type": "uint256"
+						},
+						{
+							"internalType": "bool",
+							"name": "validated",
+							"type": "bool"
+						},
+						{
+							"internalType": "uint256",
+							"name": "reward",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "rewarded",
+							"type": "uint256"
+						}
+					],
+					"internalType": "struct Packet.packetStruct",
+					"name": "",
+					"type": "tuple"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_owner",
+					"type": "address"
+				},
+				{
+					"internalType": "string",
+					"name": "_name",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "_dataHash",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "_dataType",
+					"type": "string"
+				}
+			],
+			"name": "setPacket",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_id",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_reward",
+					"type": "uint256"
+				}
+			],
+			"name": "setReward",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "_id",
+					"type": "uint256"
+				},
+				{
+					"internalType": "bool",
+					"name": "_isValid",
+					"type": "bool"
+				}
+			],
+			"name": "validatePacket",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		}
+	]
+}

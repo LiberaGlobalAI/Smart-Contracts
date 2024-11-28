@@ -1,0 +1,171 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "OnlyRewardPool",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "PacketDoesExist",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "PacketDoesNotExist",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "PacketIsNotValid",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "RewardShouldNotBeZero",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_reward",
+						"type": "uint256"
+					}
+				],
+				"name": "DistributeReward",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_dataHash",
+						"type": "string"
+					}
+				],
+				"name": "SetPacket",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_reward",
+						"type": "uint256"
+					}
+				],
+				"name": "SetReward",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "_isValid",
+						"type": "bool"
+					}
+				],
+				"name": "ValidatePacket",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LiberaContract.sol": "Packetsss"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/access/Ownable.sol": {
+			"keccak256": "0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6",
+				"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a"
+			]
+		},
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12",
+				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
+			]
+		},
+		"contracts/LiberaContract.sol": {
+			"keccak256": "0xfa678134824db6a21d584e83f3590c2f3038fd1c9a5506ef775b6fff569c964b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://449b405ae46c1b96512cfb622adb9c3d3c6eac6a65be345714c8a3456e61c6a9",
+				"dweb:/ipfs/QmcmHMaq9ZDvZcxzj1WCuEzSmn28djm4a17N91g7Bn85f6"
+			]
+		},
+		"contracts/LiberaTokenIERC20.sol": {
+			"keccak256": "0x43a0095920c8c71a4e1ff392ce883bd9b444b1c336f8fd34dbb79e444815b7ea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9ff8aaf9315bdac3e04a1621631cdd63e73ce68dc4e7abe8d74d1e49b9396e67",
+				"dweb:/ipfs/QmRrgWzdDK3Ck5fLfugiNQS9duDMY9dVZMD8LbQ8uykkDu"
+			]
+		}
+	},
+	"version": 1
+}
